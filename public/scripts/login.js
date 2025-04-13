@@ -1,12 +1,14 @@
 import { auth } from '../firebase/firebase-config.js';
-
 import { signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js';
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const loginButton = document.getElementById('login-btn');
 
-loginButton.addEventListener('click', async () => {
+// Adiciona o evento ao botão de submit do formulário
+loginButton.addEventListener('click', async (event) => {
+  event.preventDefault(); // Evita o recarregamento da página
+
   const email = emailInput.value;
   const password = passwordInput.value;
 
@@ -14,7 +16,7 @@ loginButton.addEventListener('click', async () => {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
     console.log('Login realizado com sucesso:', user);
-    
+
     window.location.href = 'pages/dashboard.html';
   } catch (error) {
     console.error('Erro ao fazer login:', error.message);
