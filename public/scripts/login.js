@@ -20,6 +20,6 @@ loginButton.addEventListener('click', async (event) => {
     window.location.href = 'pages/dashboard.html';
   } catch (error) {
     console.error('Erro ao fazer login:', error.message);
-    alert('Email ou senha inválidos.');
+    //alert('Email ou senha inválidos.');
   }
 });
