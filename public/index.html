@@ -1,44 +1,37 @@
+<!-- ================================================== -->
+
+<!-- Head. -->
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/login.css">
 </head>
 
+<!-- ================================================== -->
+
+<!-- Body. -->
 <body>
-    <div class="login-window">
-        <form class="login-form">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input id="email" type="text" placeholder="Usuário" required>
-            </div>
-            <div class="input-box">
-                <input id="password" type="password" placeholder="Senha" required>
-            </div>
-            <div class="remember-checkbox">
-                <label><input type="checkbox">Lembrar de mim?</label>
-            </div>
-            <button id="login-btn" type="submit" class="button">Entrar</button>
-            <div class="forgot-link">
-                <a href="#">Esqueceu a senha?</a>
-            </div>
-            <div class="register-link">
-                <a href="#">Registre-se</a>
-            </div>
-        </form>
+    <div class="flex items-center justify-center h-screen bg-gray-300">
+        <div style="text-align: center;" class="bg-white p-6 rounded shadow-md w-96">
+            <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+            <input id="email" type="email" placeholder="Email" class="w-full p-2 border rounded mb-4">
+            <input id="password" type="password" placeholder="Senha" class="w-full p-2 border rounded mb-4">
+            <button id="login-btn" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Entrar</button>
+            <p id="login-error" style="color: red; margin-top: 5%; display: none;">Login inválido!</p>
+            <p class="text-center mt-4 text-sm">
+            Não tem conta? <a href="pages/cadastro.html" class="text-blue-500">Cadastre-se</a>
+            </p>
+        </div>
     </div>
 </body>
 
+<!-- ================================================== -->
 
+<!-- Script. -->
 <script type="module" src="scripts/login.js"></script>
-
-<footer>
-    <p>2025 - Padre Piggato</p>
-</footer>
-
 </html>
+
+<!-- ================================================== -->

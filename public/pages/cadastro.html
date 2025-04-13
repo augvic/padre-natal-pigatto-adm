@@ -1,0 +1,58 @@
+<!-- ================================================== -->
+
+<!-- Head. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cadastro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- ================================================== -->
+
+<!-- Body. -->
+<body class="bg-gray-300 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold text-gray-00 mb-6 text-center">Crie sua conta</h2>
+        <form id="register-form" class="space-y-5">
+            <div>
+                <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+                <input id="nome" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="cargo" class="block text-sm font-medium text-gray-700">Cargo</label>
+                <input id="cargo" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input id="email" type="email" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+                <input id="password" type="password" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirmar Senha</label>
+                <input id="confirm-password" type="password" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                Cadastrar
+            </button>
+            <p id="cadastro-aprovacao" style="text-align: center; color: green; display: none;">Cadastro enviado para aprovação.</p>
+            <p id="erro-aprovacao" style="text-align: center; color: red; display: none;">Ocorreu um erro. Tente novamente.</p>
+        </form>
+        <p class="text-sm text-center mt-4 text-gray-600">
+            Já tem uma conta? <a href="../index.html" class="text-blue-600 hover:underline">Entrar</a>
+        </p>
+    </div>
+</body>
+
+<!-- ================================================== -->
+
+<!-- Script. -->
+<script type="module" src="scripts/cadastro.js"></script>
+</html>
+
+<!-- ================================================== -->
