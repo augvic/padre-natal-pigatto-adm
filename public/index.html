@@ -15,15 +15,15 @@
         <form class="login-form">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Usuário" required>
+                <input id="email" type="text" placeholder="Usuário" required>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Senha" required>
+                <input id="password" type="password" placeholder="Senha" required>
             </div>
             <div class="remember-checkbox">
                 <label><input type="checkbox">Lembrar de mim?</label>
             </div>
-            <button type="submit" class="button">Entrar</button>
+            <button id="login-btn" type="submit" class="button">Entrar</button>
             <div class="forgot-link">
                 <a href="#">Esqueceu a senha?</a>
             </div>
@@ -33,6 +33,9 @@
         </form>
     </div>
 </body>
+
+
+<script type="module" src="scripts/login.js"></script>
 
 <footer>
     <p>2025 - Padre Piggato</p>
