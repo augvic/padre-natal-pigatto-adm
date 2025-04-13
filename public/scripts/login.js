@@ -1,4 +1,5 @@
-import { auth } from './firebase.js';
+import { auth } from '../firebase/firebase-config.js';
+
 import { signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js';
 
 const emailInput = document.getElementById('email');
