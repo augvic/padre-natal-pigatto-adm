@@ -33,7 +33,7 @@ loginButton.addEventListener('click', async (event) => {
   } catch (error) {
       console.error('Erro ao fazer login:', error.message);
       errorMessage.style.display = 'block';
-  }
+    }
 });
 
 // ================================================== //
